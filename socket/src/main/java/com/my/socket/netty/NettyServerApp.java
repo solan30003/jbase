@@ -45,7 +45,6 @@ public class NettyServerApp {
         select();
     }
 
-
     private static void select() throws InterruptedException {
         final ServerHandler serverHandler = new ServerHandler();
         EventLoopGroup boss = new NioEventLoopGroup();
