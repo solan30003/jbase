@@ -18,6 +18,7 @@ import java.util.Iterator;
 import java.util.concurrent.TimeUnit;
 
 public class NioServerApp {
+
     private static String str = "Netty is a NIO client server framework which enables quick and easy development of network applications such as protocol servers and clients. It greatly simplifies and streamlines network programming such as TCP and UDP socket server.";
     private static String[] wordArr = str.replace(".", "").split(" ");
 
@@ -39,9 +40,6 @@ public class NioServerApp {
                     continue;
                 }
                 Iterator<SelectionKey> iter = selector.selectedKeys().iterator();
-//                for (SelectionKey key : selector.selectedKeys()) {
-//
-//                }
                 while (iter.hasNext()) {
                     SelectionKey key = iter.next();
                     if (key.isAcceptable()) {
@@ -82,31 +80,30 @@ public class NioServerApp {
             SocketChannel sChannel = ssChannel.accept();
             sChannel.configureBlocking(false);
             sChannel.register(key.selector(), SelectionKey.OP_READ, ByteBuffer.allocateDirect(1024));
+            System.out.println(sChannel.getRemoteAddress() + "已连接");
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
     private static void readHandler(SelectionKey key) throws IOException {
-        SocketChannel sc = (SocketChannel) key.channel();
+        SocketChannel sChannel = (SocketChannel) key.channel();
         ByteBuffer buf = (ByteBuffer) key.attachment();
-        long bytesRead = sc.read(buf);
-        while (bytesRead > 0) {
+        long bytesRead = 0;
+        while ((bytesRead = sChannel.read(buf)) > -1) {
             buf.flip();
             while (buf.hasRemaining()) {
-                System.out.print((char) buf.get());
+                System.out.println((char) buf.get());
             }
-            System.out.println();
             buf.clear();
-            bytesRead = sc.read(buf);
         }
         if (bytesRead == -1) {
             ByteBuffer buff = ByteBuffer.allocate(1024);
             buff.put("I'm SERVER.".getBytes("UTF-8"));
             buff.flip();
-            sc.write(buff);
+            sChannel.write(buff);
             buff.clear();
-            sc.close();
+            sChannel.close();
         }
     }
 
