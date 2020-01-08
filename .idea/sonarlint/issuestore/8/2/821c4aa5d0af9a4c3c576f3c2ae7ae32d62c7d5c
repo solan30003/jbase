@@ -1,0 +1,23 @@
+
+Vsquid:UselessImportCheck"+Remove this unused import 'java.util.Date'.(¸…¼ü8æ•œ¬ã-
+psquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(ğï„8æ•œ¬ã-
+Isquid:S1068"+Remove this unused "wordArr" private field.(ê¤êÿ8æ•œ¬ã-
+asquid:UselessImportCheck"1Remove this unused import 'java.io.OutputStream'.(Ó ³ÿÿÿÿÿ8æ•œ¬ã-
+Fsquid:S1148G"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8æ•œ¬ã-
+Fsquid:S1148:"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8æ•œ¬ã-
+[
+squid:S106`"9Replace this use of System.out or System.err by a logger.(çÏİøúÿÿÿÿ8æ•œ¬ã-
+Fsquid:S1148U"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8æ•œ¬ã-
+bsquid:UselessImportCheck"7Remove this unused import 'java.text.SimpleDateFormat'.(ú¡ÙÛ8æ•œ¬ã-
+Wsquid:UselessImportCheck",Remove this unused import 'java.net.Socket'.(­‡àú8æ•œ¬ã-
+Esquid:S2189&""Add an end condition to this loop.(˜ïˆÿÿÿÿÿ8æ•œ¬ã-
+[squid:UselessImportCheck"0Remove this unused import 'java.io.InputStream'.(¹»º8æ•œ¬ã-
+Fsquid:S1148@"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8æ•œ¬ã-
+V
+squid:S106S"9Replace this use of System.out or System.err by a logger.(åŠª8æ•œ¬ã-
+[
+squid:S1064"9Replace this use of System.out or System.err by a logger.(ü„˜ãÿÿÿÿÿ8æ•œ¬ã-
+esquid:UselessImportCheck":Remove this unused import 'java.util.concurrent.TimeUnit'.(Æ™ş8æ•œ¬ã-
+\squid:S4719f"9Replace charset name argument with StandardCharsets.UTF_8(ÃÒ–”øÿÿÿÿ8æ•œ¬ã-
+bsquid:UselessImportCheck"2Remove this unused import 'java.net.ServerSocket'.(ĞúÙÿÿÿÿÿ8æ•œ¬ã-
+csquid:UselessImportCheck	"3Remove this unused import 'java.net.SocketAddress'.(ìÜˆ©ıÿÿÿÿ8æ•œ¬ã-

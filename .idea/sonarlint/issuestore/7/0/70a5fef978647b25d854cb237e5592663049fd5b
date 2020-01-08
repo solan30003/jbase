@@ -1,0 +1,24 @@
+
+^squid:UselessImportCheck"7Remove this unused import 'java.net.InetSocketAddress'.(·¬ğ¶ıÿÿÿÿ
+lsquid:UselessImportCheck"JRemove this unused import 'io.netty.channel.ChannelInboundHandlerAdapter'.(ş‘Â³
+›squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(…¬ø¶şÿÿÿÿ
+^squid:UselessImportCheck"7Remove this unused import 'java.nio.channels.Selector'.(©Ê˜èùÿÿÿÿ
+esquid:UselessImportCheck"CRemove this unused import 'io.netty.channel.ChannelInboundHandler'.(ß‹÷Ï
+Qsquid:UselessImportCheck"/Remove this unused import 'java.util.Iterator'.(¥ÍòÕ
+]squid:UselessImportCheck";Remove this unused import 'java.nio.channels.SelectionKey'.(°™ˆ
+L
+squid:S106"9Replace this use of System.out or System.err by a logger.(ƒÚáB
+R
+squid:S106"9Replace this use of System.out or System.err by a logger.(®½‚ûÿÿÿÿ
+gsquid:UselessImportCheck"ERemove this unused import 'io.netty.channel.ChannelHandler.Sharable'.(æĞŸÂ
+psquid:S4144"[Update this method so that its implementation is not identical to "channelRead" on line 69.(ã¾Ä¡
+isquid:UselessImportCheck"BRemove this unused import 'java.nio.channels.ServerSocketChannel'.(¬½¸éúÿÿÿÿ
+Wsquid:UselessImportCheck"0Remove this unused import 'java.io.IOException'.(ªº»Úıÿÿÿÿ
+Wsquid:UselessImportCheck"0Remove this unused import 'java.nio.ByteBuffer'.(¿¢×±úÿÿÿÿ
+Tsquid:S4719":Replace Charset.forName() call with StandardCharsets.UTF_8(‡Ã²ùÿÿÿÿ
+Tsquid:S4719":Replace Charset.forName() call with StandardCharsets.UTF_8(‡Ã²ùÿÿÿÿ
+^squid:UselessImportCheck"<Remove this unused import 'java.nio.channels.SocketChannel'.(Í¾’Õ
+L
+squid:S106"9Replace this use of System.out or System.err by a logger.(ƒÚáB
+dsquid:UselessImportCheck"=Remove this unused import 'io.netty.channel.ChannelPipeline'.(ŠÏîûÿÿÿÿ
+@squid:S1068"+Remove this unused "wordArr" private field.(ê¤êÿ

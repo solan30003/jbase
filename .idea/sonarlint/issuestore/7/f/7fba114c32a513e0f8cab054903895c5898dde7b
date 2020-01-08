@@ -1,0 +1,15 @@
+
+[
+squid:S106&"9Replace this use of System.out or System.err by a logger.(▀╛хЪ°    8рЎгну-
+Isquid:S1068"+Remove this unused "wordArr" private field.(ъдъ 8рЎгну-
+bsquid:S21479"DCombine this catch with the one at line 55, which has the same body.(НФ¤╛8рЎгну-
+Fsquid:S11488"#Use a logger to log this exception.(А╔╘Е¤    8рЎгну-
+\squid:S4719#"9Replace charset name argument with StandardCharsets.UTF_8(╜ЛйФ√    8рЎгну-
+Csquid:S3457!"%String contains no format specifiers.(▐ЧїМ8рЎгну-
+esquid:UselessImportCheck
+":Remove this unused import 'java.util.concurrent.TimeUnit'.(╞ЩБ■8рЎгну-
+psquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 25 to the 15 allowed.(Ь√┐╪8рЎгну-
+[
+squid:S1060"9Replace this use of System.out or System.err by a logger.(ч╧▌°·    8рЎгну-
+Fsquid:S1148@"#Use a logger to log this exception.(А╔╘Е¤    8рЎгну-
+Fsquid:S1148:"#Use a logger to log this exception.(А╔╘Е¤    8рЎгну-

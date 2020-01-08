@@ -1,0 +1,12 @@
+
+Nsquid:S4719"9Replace charset name argument with StandardCharsets.UTF_8(×ä”
+ %squid:RedundantThrowsDeclarationCheck"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(àÒşüøÿÿÿÿ
+M
+squid:S106"9Replace this use of System.out or System.err by a logger.(Æ’ñÖ
+M
+squid:S106"9Replace this use of System.out or System.err by a logger.(ˆœÂ
+L
+squid:S106"9Replace this use of System.out or System.err by a logger.(ƒÚáB
+M
+squid:S106"9Replace this use of System.out or System.err by a logger.(ì®ÿ¹
+Tsquid:S4719":Replace Charset.forName() call with StandardCharsets.UTF_8(‡Ã²ùÿÿÿÿ
