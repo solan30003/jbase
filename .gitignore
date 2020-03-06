@@ -40,3 +40,4 @@ jbase-root.iml
 #maven ignore
 target/
 out/
+.idea

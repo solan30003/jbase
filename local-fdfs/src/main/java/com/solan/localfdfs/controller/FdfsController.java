@@ -56,7 +56,7 @@ public class FdfsController {
     @PostMapping("/upload")
     public ResultBean<StorePath> upload() throws FileNotFoundException {
         ResultBean<StorePath> result = new ResultBean<>();
-        File file = new File("E:\\Workspace\\Dev\\local\\local-fdfs\\file\\新框架说明.pdf");
+        File file = new File("local-fdfs\\file\\新框架说明.pdf");
         String fileName = file.getName();
         try (InputStream inStream = new FileInputStream(file)) {
             FastFile.Builder fastFileBuilder = new FastFile.Builder();
@@ -75,7 +75,7 @@ public class FdfsController {
     @GetMapping("/down")
     public ResultBean<StorePath> down(String group, String path) throws FileNotFoundException {
         ResultBean<StorePath> result = new ResultBean<>();
-        File file = new File("E:\\Workspace\\Dev\\local\\local-fdfs\\file\\新框架说明.pdf");
+        File file = new File("local-fdfs\\file\\新框架说明.pdf");
         String fileName = file.getName();
         try (InputStream inStream = new FileInputStream(file)) {
             FastFile.Builder fastFileBuilder = new FastFile.Builder();
@@ -99,7 +99,9 @@ public class FdfsController {
     @PostMapping("/uploadImg")
     public ResultBean<StorePath> uploadImg() throws FileNotFoundException {
         ResultBean<StorePath> result = new ResultBean<>();
-        File file = new File("E:\\Workspace\\Dev\\local\\local-fdfs\\file\\Capture001.png");
+        File file = new File("local-fdfs\\file\\Capture001.png");
+        System.out.println(file.getAbsolutePath());
+        System.out.println(file.exists());
         String fileName = file.getName();
         String extName = fileName.substring(fileName.lastIndexOf(".") + 1);
         try (InputStream inStream = new FileInputStream(file)) {
