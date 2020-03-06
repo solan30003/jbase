@@ -100,8 +100,6 @@ public class FdfsController {
     public ResultBean<StorePath> uploadImg() throws FileNotFoundException {
         ResultBean<StorePath> result = new ResultBean<>();
         File file = new File("local-fdfs\\file\\Capture001.png");
-        System.out.println(file.getAbsolutePath());
-        System.out.println(file.exists());
         String fileName = file.getName();
         String extName = fileName.substring(fileName.lastIndexOf(".") + 1);
         try (InputStream inStream = new FileInputStream(file)) {
