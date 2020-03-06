@@ -1,0 +1,19 @@
+server:
+  port: 30003
+
+########################################################
+#### 文件服务配置
+########################################################
+fdfs:
+  enabled: ${public.fdfs.enabled}
+  # 读取时间
+  so-timeout: ${public.fdfs.soTimeout}
+  # 连接超时时间
+  connect-timeout: ${public.fdfs.connectTimeout}
+  # 缩略图
+  thumb-image:
+    width: ${public.fdfs.thumbImage.width}
+    height: ${public.fdfs.thumbImage.height}
+  # tracker列表
+  tracker-list: ${public.fdfs.trackerList}
+  storage-list: ${public.fdfs.storageList}

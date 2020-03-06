@@ -35,7 +35,7 @@ hs_err_pid*
 .idea/misc.xml
 .idea/modules.xml
 .idea/vcs.xml
-jbase.iml
+jbase-root.iml
 
 #maven ignore
 target/

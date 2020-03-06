@@ -1,0 +1,8 @@
+server:
+  port: 30000
+
+spring:
+  profiles:
+    active: common,dev
+  application:
+    name: local-fdfs
