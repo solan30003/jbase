@@ -1,0 +1,69 @@
+server:
+  port: 9090
+
+spring:
+  profiles:
+    active: common,dev
+  application:
+    name: psdos-rplan-local
+
+springfox.documentation.swagger.v2.path: /api-docs
+
+mybatis:
+  mapper-locations:
+    - classpath*:/mybatis/*.xml
+  config-location: classpath:mybatis-config.xml
+
+#mapper
+mapper:
+  mappers: com.encdata.oss.starter.web.base.EncMapper
+  not-empty: false
+  identity: MYSQL
+
+#pagehelper
+pagehelper:
+  helperDialect: mysql
+  reasonable: true
+  supportMethodsArguments: true
+  params: count=countSql
+  pageSizeZero: true
+  rowBoundsWithCount: true
+  offsetAsPageNum: true
+
+
+
+
+logging:
+  level:
+    io.swagger.models.parameters.AbstractSerializableParameter: error
+
+level:
+  io:
+    swagger:
+      models:
+        parameters:
+          AbstractSerializableParameter=error:
+
+executorTimeout: 60
+executorFailRetryCount: 3
+
+#远程调用和重试次数设置
+ribbon:
+  ReadTimeOut: 10000
+  ConnectTimeOut: 10000
+  #自动切换实例重试次数
+  MaxAutoRetriesNextServer: 3
+  #当前实例重试次数
+  MaxAutoRetries: 3
+  #对所有操作请求都进行重试默认未false
+  OkToRetryOnAllOPerations: true
+
+#API接口前缀
+api:
+  prefix:
+    v1: /api/rplan/impl/v1
+    v2: /api/rplan/impl/v2
+    svc:
+      v1: /api/rplan/svc/v1
+      v2: /api/rplan/svc/v2
+
