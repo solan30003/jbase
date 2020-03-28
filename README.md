@@ -1,2 +1,2 @@
 # jbaselib
-jbaselib 常用类库
+jbaselib 常用类库。
