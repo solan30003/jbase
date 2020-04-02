@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration debug="false" scan="false">
+    <property name="log.path" value="e:\\logs"/>
+
+    <!-- console log output -->
+    <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <charset>utf-8</charset>
+            <pattern>%date{yyyy-MM-dd HH:mm:ss.SSS}[%thread] %-5level %logger[%line] %msg%n
+            </pattern>
+        </encoder>
+    </appender>
+
+    <appender name="encAppender" class="com.solan.jbase.log.EncAppender">
+        <baseUrl>10.19.76.55:30000</baseUrl>
+        <consoleEnabled>false</consoleEnabled>
+    </appender>
+
+    <contextListener class="ch.qos.logback.classic.jul.LevelChangePropagator">
+        <resetJUL>true</resetJUL>
+    </contextListener>
+
+
+    <!-- Level: FATAL 0  ERROR 3  WARN 4  INFO 6  DEBUG 7 -->
+    <logger name="javax.activation" level="WARN"/>
+
+    <root level="info">
+        <appender-ref ref="console"/>
+<!--        <appender-ref ref="encAppender"/>-->
+    </root>
+
+
+</configuration>
