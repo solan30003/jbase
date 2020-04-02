@@ -12,6 +12,8 @@
     <modules>
         <module>jbase</module>
         <module>local-fdfs</module>
+        <module>local-api-ref</module>
+        <module>rules</module>
     </modules>
 
     <dependencies>

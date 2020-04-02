@@ -41,3 +41,4 @@ jbase-root.iml
 target/
 out/
 .idea
+*.iml
